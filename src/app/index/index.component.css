@@ -1,0 +1,11 @@
+agm-map {
+  height: 300px;
+}
+
+.contenedor{max-width: 1200px;margin: 40px auto;}
+h1{font-family: 'Roboto';}
+
+
+@media all and (max-width: 768px) {
+    .menu-wrapper{display:none;}
+}

@@ -1,0 +1,125 @@
+<div class="menu-wrapper">
+  <ul class="menu">
+    <li data-menuanchor="menuAnchor1" class="active"><a href="#menuAnchor1">Quienes Somos</a></li>
+    <li data-menuanchor="menuAnchor2"><a href="#menuAnchor2">Servicios</a></li>
+    <li data-menuanchor="menuAnchor3"><a href="#menuAnchor3">Productos</a></li>
+    <li data-menuanchor="menuAnchor4"><a href="#menuAnchor4">Clientes</a></li>
+    <li data-menuanchor="menuAnchor5"><a href="#menuAnchor5">Galeria</a></li>
+    <li data-menuanchor="menuAnchor6"><a href="#menuAnchor6">Contacto</a></li>
+  </ul>
+</div>
+
+<div id="content-wrapper" [mnFullpage]="options" [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true" [mnFullpageSlidesNavigation]="true"
+  mnFullpageSlidesNavPosition="bottom">
+
+  <div class="section welcome-section fp-section fp-table">
+    <div class="fp-tableCell">
+      <div class="contenedor">
+
+        <h1>Acuaworld</h1>
+
+
+        <p>
+          Somos empresa joven dedicada a promover el acuarismo uruguayo, a través de la comercialización de todas las marcas del mercado.
+        </p>
+        <p>
+          En nuestro local podrán encontrar una amplia gama de productos para acuarios, y el mejor asesoramiento para nuevos acuaristas.
+        </p>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="section install-section fp-section fp-table">
+    <div class="fp-tableCell">
+      <div class="contenedor">
+      Nuestos Servicios
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section usage-section fp-section fp-table">
+    <div class="fp-tableCell">
+      <div class="contenedor">
+
+      </div>
+      <div class="slide">
+        3.1
+      </div>
+      <div class="slide">
+        3.2
+      </div>
+      <div class="slide">
+        3.3
+      </div>
+    </div>
+  </div>
+  <div class="section slides-section fp-section fp-table">
+    <div class="fp-tableCell">
+      <div class="contenedor">
+
+      </div>
+      <div class="slide">
+        4.1
+      </div>
+      <div class="slide">
+        4.2
+      </div>
+      <div class="slide">
+        4.3
+      </div>
+      <div class="slide">
+        4.4
+      </div>
+    </div>
+  </div>
+  <div class="section usage-section fp-section fp-table">
+    <div class="fp-tableCell">
+      <div class="contenedor">
+
+      </div>
+      5
+    </div>
+  </div>
+  <div class="section start-use-it-now-section fp-section fp-table">
+    <div class="fp-tableCell">
+
+      <div class="contenedor">
+
+
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="12" [styles]="style">
+          <agm-data-layer>
+            <agm-marker [latitude]="lat" [longitude]="lng" [title]="title">
+              <agm-info-window>hola</agm-info-window>
+            </agm-marker>
+          </agm-data-layer>
+        </agm-map>
+        <div class="box-contacto" style="background-color: #0a6d95;padding: 20px;">
+          <h1 class="white " style="margin-top: 0px;">CONTACTO</h1>
+          <div class="borderbottomWhite"></div>
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+              <input id="nombreContacto" class="mdl-cell mdl-cell--12-col" placeholder="Nombre" type="text" style="border-style: none;border: 1px solid white;padding: 10px;background-color: transparent;color: white;font-size: 15px;border-radius: 5px;">
+              <input id="emailContacto" class="mdl-cell mdl-cell--12-col" placeholder="E-mail" type="email" style="border-style: none;border: 1px solid white;padding: 10px;background-color: transparent;color: white;font-size: 15px;border-radius: 5px;">
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <textarea class="mdl-cell mdl-cell--12-col" id="msjContacto" placeholder="Mensaje" style="border-style: none;border: 1px solid white;padding: 10px;background-color: transparent;color: white;font-size: 15px;border-radius: 5px;"></textarea>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="sample1">
+              <label class="mdl-textfield__label" for="sample1">Text...</label>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <button class="mdl-cell mdl-cell--12-col" id="enviarEmailContacto" style="border-style: none;border: 1px solid white;padding: 10px;background-color: transparent;color: white;font-size: 15px;border-radius: 5px;">ENVIAR <i id="loadingContacto" class="fa fa-spinner fa-pulse fa-fw" style="display: none;"></i> <i id="sendCorrectly" class="fa fa-check fa-fw" style="display: none;"></i> </button>
+            </div>
+            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate mdl-cell mdl-cell--12-col"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
