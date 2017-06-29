@@ -1,0 +1,16 @@
+{
+  "name": "Acuaworld",
+  "description": "Example web app",
+  "keywords": [
+    "Angular",
+    "Node"
+  ],
+  "repository": "https://github.com/pollitodas/acua-onepage",
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+}
