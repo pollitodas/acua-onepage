@@ -1,11 +1,14 @@
 import { Component, OnInit, Input, Output, ViewEncapsulation } from '@angular/core';
 import { MnFullpageOptions, MnFullpageService } from 'ngx-fullpage';
 
+declare var jquery: any;
+declare var $: any;
+
 @Component({
   selector: 'app-index',
   encapsulation: ViewEncapsulation.None,
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss','./index.component.css']
+  styleUrls: ['./index.component.scss', './index.component.css']
 })
 export class IndexComponent implements OnInit {
 
@@ -106,10 +109,18 @@ export class IndexComponent implements OnInit {
   ]
 
   constructor(public fullpageService: MnFullpageService) {
+
+
+
+    
   }
 
 
   ngOnInit() {
+  }
+
+  menu() {
+    $(".top-nav ul").slideToggle(200);
   }
 
 }

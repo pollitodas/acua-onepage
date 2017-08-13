@@ -1,3 +1,506 @@
+<!--header-->
+<div class="header-section" id="home">
+  <div class="header-top">
+    <!--logo-->
+    <div class="logo">
+      <a href="#">
+        <!--<h1>Acuario</h1>-->
+        <img src="../../assets/img/logo.png" alt="" style="width: 50%;">
+      </a>
+    </div>
+    <div class="header-right">
+      <p class="col-md-3 location"><i class="glyphicon glyphicon-map-marker"></i>1744, Acevedo Diaz</p>
+      <p class="col-md-3 phone"><i class="glyphicon glyphicon-phone"></i> 099 029 131</p>
+      <p class="col-md-6 mail"><i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@example.com">damianmillan19@gmail.com</a></p>
+
+      <div class="clearfix"> </div>
+      <div class="top-nav">
+        <span class="menu" (click)="menu()">
+          <i class="fa fa-bars" aria-hidden="true"></i>  
+        </span>
+        <ul class="cl-effect-16">
+          <li><a class="active scroll" href="#home" data-hover="Home">Inicio</a></li>
+          <li><a class="scroll" href="#about" data-hover="About">Sobre Acuaworld</a></li>
+          <li><a class="scroll" href="#service" data-hover="Services">Servicios</a></li>
+          <li><a class="scroll" href="#team" data-hover="Team">Equipo</a></li>
+          <li><a class="scroll" href="#news" data-hover="News">Productos</a></li>
+          <li><a class="scroll" href="#gallery" data-hover="Gallery">Galeria</a></li>
+          <li><a class="scroll" href="#contact" data-hover="Contact">Contacto</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <!--top-nav-->
+    <div class="clearfix"> </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="clearfix"> </div>
+
+<div class="clearfix"> </div>
+<!--banner-->
+<div class="banner">
+  <!-- Slider-starts-Here -->
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: false,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+  <!--//End-slider-script -->
+  <div class="callbacks_container">
+    <ul class="rslides" id="slider4">
+      <li>
+        <div class="banner-img">
+          <img src="../../assets/img/1.jpg" class="img-responsive" alt="" />
+        </div>
+
+      </li>
+      <!--<li>
+        <div class="banner-img">
+          <img src="../../assets/img/3.jpg" class="img-responsive" alt="" />
+        </div>
+
+      </li>
+      <li>
+        <div class="banner-img">
+          <img src="../../assets/img/1.jpg" class="img-responsive" alt="" />
+        </div>
+
+      </li>-->
+    </ul>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="clearfix"> </div>
+<!--start-about-->
+<div class="about" id="about">
+  <div class="container">
+    <h2>Sobre Acuaworld</h2>
+    <div class="about-bottom">
+      <p>
+        Nuestra Visión es ser una empresa referente en el acuarismo nacional, tanto para principiantes, como para expertos en todos
+        los tipos de acuarios. Mediante una permanente innovación en nuestra oferta de productos, buscamos expandir las posibilidades
+        para que nuestros clientes puedan disfrutar de este hermoso hobby sin dificultades. La calidad en la atención, la
+        honestidad y la garantia de la casa, son algunos de los valores que nos diferencian.
+      </p>
+      <div class="about-btm">
+        <div class="col-md-6 about-left">
+          <img src="../../assets/img/g5.jpg" alt="" />
+        </div>
+        <div class="col-md-6 about-right">
+          <img src="../../assets/img/g6.jpg" alt="" />
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-about-->
+
+
+
+
+
+
+
+
+<!--/services-->
+<div class="services" id="service">
+  <div class="container">
+    <h3 class="tittle">Nuestros Servicios</h3>
+    <div class="serve-top">
+      <div class="col-md-6 serve-icons">
+        <div class="s-sub">
+          <div class="col-md-2 icon">
+            <i class="glyphicon glyphicon-globe"></i>
+          </div>
+          <div class="col-md-10 serve-text">
+            <p> Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis
+              natoque penatibus. </p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="s-sub">
+          <div class="col-md-2 icon">
+            <i class="glyphicon glyphicon-send"></i>
+          </div>
+          <div class="col-md-10 serve-text">
+            <p> Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis
+              natoque penatibus.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="s-sub">
+          <div class="col-md-2 icon">
+            <i class="glyphicon glyphicon-briefcase"></i>
+          </div>
+          <div class="col-md-10 serve-text">
+            <p> Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis
+              natoque penatibus.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="col-md-6 serve-icons">
+        <div class="s-sub">
+          <div class="col-md-2 icon">
+            <i class="glyphicon glyphicon-screenshot"></i>
+          </div>
+          <div class="col-md-10 serve-text">
+            <p> Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis
+              natoque penatibus. </p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="s-sub">
+          <div class="col-md-2 icon">
+            <i class="glyphicon glyphicon-edit"></i>
+          </div>
+          <div class="col-md-10 serve-text">
+            <p> Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis
+              natoque penatibus.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="s-sub">
+          <div class="col-md-2 icon">
+            <i class="glyphicon glyphicon-certificate"></i>
+          </div>
+          <div class="col-md-10 serve-text">
+            <p> Duis quis risus a nunc ultricies varius. Aenean aliquam pellentesque magna consectetur hendrerit. Cum sociis
+              natoque penatibus.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--start-latest-->
+<!--
+<div class="fishes">
+  <div class="container">
+    <h3 class="tittle">Different Fishes</h3>
+    <div class="grid">
+      <div class="col-md-6 l-grids">
+        <figure class="effect-bubba">
+          <img src="../../assets/img/g1.jpg" alt="" />
+          <figcaption>
+            <h4>Acuario</h4>
+            <p>In sit amet sapien eros Integer in tincidunt labore et dolore magna aliqua</p>
+            <div class="icon-links">
+              <a href="#"><i class="glyphicon glyphicon-paperclip"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6 l-grids">
+        <figure class="effect-bubba">
+          <img src="../../assets/img/g3.jpg" alt="" />
+          <figcaption>
+            <h4>Acuario</h4>
+            <p>In sit amet sapien eros Integer in tincidunt labore et dolore magna aliqua</p>
+            <div class="icon-links">
+              <a href="#"><i class="glyphicon glyphicon-paperclip"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6 l-grids">
+        <figure class="effect-bubba">
+          <img src="../../assets/img/g4.jpg" alt="" />
+          <figcaption>
+            <h4>Acuario</h4>
+            <p>In sit amet sapien eros Integer in tincidunt labore et dolore magna aliqua</p>
+            <div class="icon-links">
+              <a href="#"><i class="glyphicon glyphicon-paperclip"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6 l-grids">
+        <figure class="effect-bubba">
+          <img src="../../assets/img/g2.jpg" alt="" />
+          <figcaption>
+            <h4>Acuario</h4>
+            <p>In sit amet sapien eros Integer in tincidunt labore et dolore magna aliqua</p>
+            <div class="icon-links">
+              <a href="#"><i class="glyphicon glyphicon-paperclip"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!--productos-starts-->
+<div class="productos fishes" id="productos">
+  <div class="container" style="text-align: center;">
+    <h3 class="tittle">Nuestos Productos</h3>
+    <img src="../../assets/img/productos/alcon.png" alt="">
+    <img src="../../assets/img/productos/hikari.jpg" alt="">
+    <img src="../../assets/img/productos/prodac.jpg" alt="">
+    <img src="../../assets/img/productos/rs.jpg" alt="">
+    <img src="../../assets/img/productos/sera.jpg" alt="">
+    <img src="../../assets/img/productos/sobo.jpg" alt="">
+    <img src="../../assets/img/productos/tetra.png" alt="">
+
+
+  </div>
+</div>
+<!--productos-end-->
+
+
+
+<!-- team -->
+<div class="team" id="team">
+  <div class="container">
+    <h3 class="tittle">Nuestro Equipo</h3>
+    <div class="team-grids">
+      <div class="col-md-4 team-grid text-center">
+        <div class="team-img">
+          <img src="../../assets/img/t2.jpg" alt="" />
+          <h3>Sebastian</h3>
+          <!-- <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p> -->
+          <ul>
+            <li>
+              <a class="fb" href="#"></a>
+            </li>
+            <li>
+              <a class="twitt" href="#"></a>
+            </li>
+            <li>
+              <a class="goog" href="#"></a>
+            </li>
+            <li>
+              <a class="drib" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 team-grid text-center">
+        <div class="team-img">
+          <img src="../../assets/img/t1.jpg" alt="" />
+          <h3>Analia</h3>
+          <!-- <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p> -->
+          <ul>
+            <li>
+              <a class="fb" href="#"></a>
+            </li>
+            <li>
+              <a class="twitt" href="#"></a>
+            </li>
+            <li>
+              <a class="goog" href="#"></a>
+            </li>
+            <li>
+              <a class="drib" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 team-grid text-center">
+        <div class="team-img">
+          <img src="../../assets/img/t3.jpg" alt="" />
+          <h3>Agustina</h3>
+          <!-- <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p> -->
+          <ul>
+            <li>
+              <a class="fb" href="#"></a>
+            </li>
+            <li>
+              <a class="twitt" href="#"></a>
+            </li>
+            <li>
+              <a class="goog" href="#"></a>
+            </li>
+            <li>
+              <a class="drib" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!-- team -->
+
+
+
+<!--gallery-starts-->
+<div class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-top heading">
+      <h3 class="tittle">Galeria</h3>
+    </div>
+    <div class="gallery-bottom">
+      <div class="gallery-grids">
+        <div class="col-md-3 gallery-left">
+          <div class="g-1">
+            <a class="example-image-link" href="../../assets/img/g5.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-2.jpg" alt="" /></a>
+          </div>
+          <div class="g-2">
+            <a class="example-image-link" href="../../assets/img/g7.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-7.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-md-6 gallery-left">
+          <a class="example-image-link" href="../../assets/img/g6.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-1.jpg" alt="" /></a>
+          <div class="g-5">
+            <div class="col-md-6 g-3">
+              <a class="example-image-link" href="../../assets/img/g3.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-5.jpg" alt="" /></a>
+            </div>
+            <div class="col-md-6 g-4">
+              <a class="example-image-link" href="../../assets/img/g4.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-6.jpg" alt="" /></a>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <a class="example-image-link" href="../../assets/img/g8.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-8.jpg" alt="" /></a>
+        </div>
+        <div class="col-md-3 gallery-left">
+          <a class="example-image-link" href="../../assets/img/g1.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-3.jpg" alt="" /></a>
+          <div class="g-6">
+            <a class="example-image-link" href="../../assets/img/g2.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="../../assets/img/g-4.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--gallery-end-->
+
+
+
+
+
+
+<!--start-contact-->
+<div class="contact_desc" id="contact">
+  <div class="container">
+    <h3 class="tittle">Contactanos</h3>
+    <div class="contact-form">
+      <form class="left_form">
+        <div>
+          <span><label>Nombre</label></span>
+          <span><input name="userName" type="text" class="textbox"></span>
+        </div>
+        <div>
+          <span><label>E-mail</label></span>
+          <span><input name="userEmail" type="text" class="textbox"></span>
+        </div>
+      </form>
+      <form class="right_form">
+        <div>
+          <span><label>Mensaje</label></span>
+          <span><textarea name="userMsg"> </textarea></span>
+        </div>
+        <div>
+          <input type="submit" value="Envar" />
+        </div>
+      </form>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<div class="contact">
+  <div class="col-md-6 contact-top">
+    <div class="point"> <i class="glyphicon glyphicon-map-marker"></i></div>
+    <h3 class="tittle two">Encuentranos</h3>
+    <h4>Para cualquier pregunta, por favor sientase libre ponerse en contacto por alguna de nuestras via de comunicación.</h4>
+    <div class="contact-ad">
+      <p>Direccion : Acevedo Diaz 1644
+      </p>
+      <p>Thelefono : 099 029 131
+      </p>
+      <p>E-mail :<a href="mailto:info@example.com">damianmillan19@gmail.com</a></p>
+
+    </div>
+  </div>
+  <div class="col-md-6 map">
+
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" [styles]="style">
+      <agm-data-layer>
+        <agm-marker [latitude]="lat" [longitude]="lng" [title]="title">
+          <agm-info-window>hola</agm-info-window>
+        </agm-marker>
+      </agm-data-layer>
+    </agm-map>
+  </div>
+  <div class="clearfix"> </div>
+</div>
+<!--//contact-->
+
+
+
+<div class="copy">
+  <p>&copy; 2017 Acuarioworld. All Rights Reserved </p>
+</div>
+<!--start-smooth-scrolling-->
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    $(".scroll").click(function (event) {
+      event.preventDefault();
+      $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+    });
+  });
+
+</script>
+<!--start-smoth-scrolling-->
+
+<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+
+
+<!--
 <div class="menu-wrapper">
   <ul class="menu">
     <li data-menuanchor="menuAnchor1" class="active"><a href="#menuAnchor1">Quienes Somos</a></li>
@@ -16,6 +519,9 @@
     <div class="fp-tableCell">
       <div class="contenedor">
 
+        <video src="../../assets/video/banner.mp4" loop autoplay muted poster="../../assets/img/fondo.jpg">
+
+        </video>
         <h1>Acuaworld</h1>
 
 
@@ -31,11 +537,52 @@
       </div>
     </div>
   </div>
-  <div class="section install-section fp-section fp-table">
+  <div id="servicios" class="section  install-section fp-section fp-table">
     <div class="fp-tableCell">
       <div class="contenedor">
-      Nuestos Servicios
+        <h1>
+          Nuestros Servicios
+        </h1>
+        <div class="dm-grid col-12">
 
+          <div class="col-3">
+            <article class="col-12">
+              <i class="fa fa-truck fa-4x"></i>
+              <span>&nbsp;</span>
+              <h2>Envíos a Domicilio</h2>
+              <p>Enviamos a todo el país, con un costo que va de los 0 a los 150 pesos.</p>
+            </article>
+          </div>
+          <div class="col-3">
+
+            <article class="col-12">
+              <i class="fa fa-puzzle-piece fa-4x"></i>
+              <span>&nbsp;</span>
+              <h2>Armado de Acuarios</h2>
+              <p>Montamos acuarios para que los puedan disfrutar de inmediato, al mismo tiempo que capacitamos en su cuidado
+                y mantenimiento.</p>
+            </article>
+          </div>
+          <div class="col-3">
+
+            <article class="col-12">
+              <i class="fa fa-cogs fa-4x"></i>
+              <span>&nbsp;</span>
+              <h2>Mantenimientos</h2>
+              <p>Se realiza mantenimiento periódico y decorado de acuarios.</p>
+            </article>
+          </div>
+          <div class="col-3">
+
+            <article class="col-12">
+              <i class="fa fa-leanpub fa-4x"></i>
+              <span>&nbsp;</span>
+              <h2>Capacitación</h2>
+              <p>Brindamos capacitación a nuevos acuaristas, para que puedan disfrutar del hobby sin dificultades.</p>
+            </article>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -123,3 +670,4 @@
     </div>
   </div>
 </div>
+-->

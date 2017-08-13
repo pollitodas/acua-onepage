@@ -9,11 +9,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/damian.css">
+  <link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!-- Custom Theme files -->
+  <link href="assets/css/style.css" rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/style3.css" />
+  
+  <script src="assets/libs/jquery-1.11.1.min.js"></script>
+
+
+  <script type="text/javascript" src="assets/libs/move-top.js"></script>
+  <script type="text/javascript" src="assets/libs/easing.js"></script>
+  <script type="text/javascript" src="assets/libs/responsiveslides.min.js"></script>
+  
+  <!--/script-->
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+      });
+    });
+
+  </script>
+  
+
+
 </head>
 
 <body>
   <app-root>
-    <i class="fa fa-spinner fa-pulse fa-2x" style=""></i>
   </app-root>
 </body>
 

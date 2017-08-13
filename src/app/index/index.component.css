@@ -1,11 +1,49 @@
 agm-map {
-  height: 300px;
+  height: 540px;
 }
 
-.contenedor{max-width: 1200px;margin: 40px auto;}
-h1{font-family: 'Roboto';}
+body{
+ /* background-image: url(../../assets/img/fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 
+.contenedor{
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+h1{font-family: 'Roboto';}
 
 @media all and (max-width: 768px) {
     .menu-wrapper{display:none;}
 }
+
+video{
+  position: fixed;
+  min-width: 100%;
+  min-height: calc(100% - 60px);
+
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  filter: blur(5px);
+}
+
+#servicios{}
+#servicios h1{color: #1976d2;margin-bottom:20px;}
+
+article{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  background-color:#f9f9f9;
+  min-height:300px;
+}
+article i{color: #a2c2e6}
+article h2{width: 100%;color:#1976d2;font-weight: 600;font-size: 1.3em;}
+article span{display:block;width: 100%;margin-top:10px;border-top:1px solid #ccc;}
+article p{width: 100%;text-align: center;line-height: 1.5em;}
+
